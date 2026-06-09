@@ -1,0 +1,115 @@
+{
+  "menus": [
+    {
+      "nome": "JavaScript Básico",
+      "linguagem": "javascript",
+      "descricao": "Conceitos fundamentais de JavaScript",
+      "items": [
+        {
+          "titulo": "Hello World",
+          "codigo": "console.log('Hello, World!');",
+          "emoji": "👋"
+        },
+        {
+          "titulo": "Arrow Function",
+          "codigo": "const soma = (a, b) => a + b;\n\nconsole.log(soma(2, 3)); // 5",
+          "emoji": "➡️"
+        },
+        {
+          "titulo": "Array Methods",
+          "codigo": "const numeros = [1, 2, 3, 4, 5];\n\nconst dobrados = numeros.map(n => n * 2);\nconst pares = numeros.filter(n => n % 2 === 0);\nconst soma = numeros.reduce((acc, n) => acc + n, 0);\n\nconsole.log(dobrados); // [2, 4, 6, 8, 10]\nconsole.log(pares);    // [2, 4]\nconsole.log(soma);     // 15",
+          "emoji": "📋"
+        }
+      ]
+    },
+    {
+      "nome": "Python Iniciante",
+      "linguagem": "python",
+      "descricao": "Conceitos básicos de Python para iniciantes",
+      "items": [
+        {
+          "titulo": "Hello World",
+          "codigo": "print('Hello, World!')",
+          "emoji": "🐍"
+        },
+        {
+          "titulo": "List Comprehension",
+          "codigo": "# Quadrados de 0 a 4\nquadrados = [x**2 for x in range(5)]\nprint(quadrados)  # [0, 1, 4, 9, 16]\n\n# Apenas pares\npares = [x for x in range(10) if x % 2 == 0]\nprint(pares)  # [0, 2, 4, 6, 8]",
+          "emoji": "📝"
+        },
+        {
+          "titulo": "Função",
+          "codigo": "def soma(a, b):\n    return a + b\n\ndef saudacao(nome, mensagem='Olá'):\n    return f'{mensagem}, {nome}!'\n\nprint(soma(3, 7))           # 10\nprint(saudacao('Mundo'))    # Olá, Mundo!",
+          "emoji": "🔧"
+        }
+      ]
+    },
+    {
+      "nome": "HTML & CSS",
+      "linguagem": "html",
+      "descricao": "Estruturas HTML5 e estilos CSS modernos",
+      "items": [
+        {
+          "titulo": "Estrutura HTML5",
+          "codigo": "<!DOCTYPE html>\n<html lang=\"pt-BR\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Minha Página</title>\n</head>\n<body>\n    <h1>Olá, Mundo!</h1>\n    <p>Meu primeiro documento HTML5.</p>\n</body>\n</html>",
+          "emoji": "🌐"
+        },
+        {
+          "titulo": "Flexbox",
+          "codigo": ".container {\n    display: flex;\n    justify-content: center;  /* horizontal */\n    align-items: center;      /* vertical */\n    flex-wrap: wrap;\n    gap: 1rem;\n}\n\n.item {\n    flex: 1 1 200px;  /* grow shrink basis */\n    padding: 1rem;\n}",
+          "emoji": "📐"
+        },
+        {
+          "titulo": "Grid",
+          "codigo": ".container {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n    grid-template-rows: auto;\n    gap: 1rem;\n}\n\n.header {\n    grid-column: 1 / -1; /* ocupa toda a largura */\n}\n\n.sidebar {\n    grid-row: 2 / 4;\n}",
+          "emoji": "🗂️"
+        }
+      ]
+    },
+    {
+      "nome": "Comandos Git",
+      "linguagem": "bash",
+      "descricao": "Comandos Git essenciais para controle de versão",
+      "items": [
+        {
+          "titulo": "Iniciar Repositório",
+          "codigo": "# Iniciar novo repositório\ngit init\n\n# Clonar repositório existente\ngit clone https://github.com/usuario/repo.git\n\n# Adicionar origem remota\ngit remote add origin https://github.com/usuario/repo.git\n\n# Ver status dos arquivos\ngit status",
+          "emoji": "🚀"
+        },
+        {
+          "titulo": "Branch",
+          "codigo": "# Listar branches\ngit branch\n\n# Criar nova branch\ngit branch nome-da-branch\n\n# Mudar para branch\ngit checkout nome-da-branch\n\n# Criar e mudar (atalho)\ngit checkout -b nova-branch\n\n# Deletar branch\ngit branch -d nome-da-branch\n\n# Merge branch atual com outra\ngit merge nome-da-branch",
+          "emoji": "🌿"
+        },
+        {
+          "titulo": "Push & Pull",
+          "codigo": "# Adicionar arquivos ao stage\ngit add .                  # tudo\ngit add arquivo.txt        # arquivo específico\n\n# Commit\ngit commit -m \"mensagem do commit\"\n\n# Push para repositório remoto\ngit push origin main\n\n# Pull (buscar + merge)\ngit pull origin main\n\n# Fetch (buscar sem merge)\ngit fetch origin",
+          "emoji": "📤"
+        }
+      ]
+    },
+    {
+      "nome": "SQL Básico",
+      "linguagem": "sql",
+      "descricao": "Comandos SQL fundamentais para banco de dados",
+      "items": [
+        {
+          "titulo": "SELECT",
+          "codigo": "-- Selecionar todos os registros\nSELECT * FROM usuarios;\n\n-- Selecionar colunas específicas\nSELECT nome, email, idade FROM usuarios;\n\n-- Com condição\nSELECT * FROM usuarios WHERE idade >= 18;\n\n-- Ordenar resultados\nSELECT * FROM usuarios ORDER BY nome ASC;\n\n-- Limitar resultados\nSELECT * FROM usuarios LIMIT 10;",
+          "emoji": "🔍"
+        },
+        {
+          "titulo": "INSERT",
+          "codigo": "-- Inserir um registro\nINSERT INTO usuarios (nome, email, idade)\nVALUES ('João Silva', 'joao@email.com', 25);\n\n-- Inserir múltiplos registros\nINSERT INTO usuarios (nome, email, idade)\nVALUES \n    ('Maria Santos', 'maria@email.com', 30),\n    ('Pedro Costa', 'pedro@email.com', 22),\n    ('Ana Lima', 'ana@email.com', 28);",
+          "emoji": "➕"
+        },
+        {
+          "titulo": "JOIN",
+          "codigo": "-- INNER JOIN (registros que existem em ambas)\nSELECT u.nome, p.titulo, p.data\nFROM usuarios u\nINNER JOIN posts p ON u.id = p.usuario_id;\n\n-- LEFT JOIN (todos da esquerda + matches)\nSELECT u.nome, COUNT(p.id) AS total_posts\nFROM usuarios u\nLEFT JOIN posts p ON u.id = p.usuario_id\nGROUP BY u.id, u.nome\nORDER BY total_posts DESC;",
+          "emoji": "🔗"
+        }
+      ]
+    }
+  ],
+  "canal_id": null
+}

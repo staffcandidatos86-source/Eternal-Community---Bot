@@ -1,5 +1,4 @@
 const { Client, GatewayIntentBits, InteractionType } = require('discord.js');
-const config = require('./config.json');
 const { mostrarPainel } = require('./handlers/painelHandler');
 const { handleButton } = require('./handlers/buttonHandler');
 const { handleSelect } = require('./handlers/selectHandler');
@@ -45,4 +44,10 @@ client.on('interactionCreate', async (interaction) => {
     }
 });
 
-client.login(config.token);
+const token = process.env.DISCORD_TOKEN;
+if (!token) {
+    console.error('❌ Variável DISCORD_TOKEN não encontrada.');
+    process.exit(1);
+}
+
+client.login(token);

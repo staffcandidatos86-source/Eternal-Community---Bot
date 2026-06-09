@@ -1,0 +1,16 @@
+node_modules
+artifacts/
+lib/
+scripts/
+.local/
+.agents/
+attached_assets/
+pnpm-workspace.yaml
+pnpm-lock.yaml
+tsconfig*.json
+*.md
+.gitignore
+.prettierrc*
+.eslintrc*
+discord-bot/node_modules
+discord-bot/*.md
